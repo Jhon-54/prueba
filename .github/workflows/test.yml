@@ -98,3 +98,7 @@ jobs:
           python services/autores/app.py &
           sleep 5
           pytest services/autores/test_autores.py
+
+          python services/editoriales/app.py &
+          sleep 5
+          pytest services/editoriales/test_editoriales.py
