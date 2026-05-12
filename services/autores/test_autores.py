@@ -21,6 +21,10 @@ class Test_autores:
 
     def teardown_class(self):
         #Limpia la base de datos
+        
+        sql = "DELETE FROM autores"
+        mi_cursor.execute(sql)
+
         sql = "DELETE FROM paises WHERE idPais IN ('VZ','CO')"
         mi_cursor.execute(sql)
         mi_db.commit()
