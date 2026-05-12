@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-05-2026 a las 05:50:13
+-- Tiempo de generación: 12-05-2026 a las 06:38:29
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -87,6 +87,13 @@ CREATE TABLE `paises` (
   `nombre` varchar(30) NOT NULL,
   `continente` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `paises`
+--
+
+INSERT INTO `paises` (`idPais`, `nombre`, `continente`) VALUES
+('VZ', 'Venezuela', 'America');
 
 -- --------------------------------------------------------
 

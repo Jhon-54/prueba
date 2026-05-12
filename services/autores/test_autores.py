@@ -10,7 +10,7 @@ class Test_autores:
         id = "01"
         nombre = "pablo"
         email = "pablitogod@gmail.com"
-        idPais = "PP"
+        idPais = "VZ"
         sql = f"INSERT INTO autores (idAutor,nombre,email, idPais) VALUES ('{id}','{nombre}','{email}', '{idPais}')"
         mi_cursor.execute(sql)
         mi_db.commit()
