@@ -67,7 +67,7 @@ jobs:
           mysql -h 127.0.0.1 -u root -proot -e "CREATE DATABASE IF NOT EXISTS biblioteca;"
 
           # Importar archivo SQL
-          mysql -h 127.0.0.1 -u root -proot biblioteca < biblioteca_completa.sql
+          mysql -h 127.0.0.1 -u root -proot biblioteca < biblioteca.sql
 
       # Instalar dependencias
       - name: Instalar dependencias
