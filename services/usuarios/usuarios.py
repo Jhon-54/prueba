@@ -25,7 +25,7 @@ class Usuarios:
         return resultado
     
     def modificar(self,id, nom, contra):
-        sql = f"UPDATE usuarios SET nombre='{nom}', contrasena'{contra}' WHERE idUsuarios='{id}'"
+        sql = f"UPDATE usuarios SET nombre='{nom}', contrasena='{contra}' WHERE idUsuarios='{id}'"
         mi_cursor.execute(sql)
         mi_db.commit()
 
