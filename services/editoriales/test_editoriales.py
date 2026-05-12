@@ -8,9 +8,9 @@ class Test_editoriales:
         # Preparación del entorno de las pruebas
         self.url = "http://localhost:5083/editoriales"
 
-        sql = "INSERT IGNORE INTO paises (idPais,nombre) VALUES ('VZ','Venezuela')"
+        sql = "INSERT INTO paises (idPais,nombre,continente) VALUES ('VZ','Venezuela','America sur')"
         mi_cursor.execute(sql)
-        sql = "INSERT IGNORE INTO paises (idPais,nombre) VALUES ('CO','Colombia')"
+        sql = "INSERT INTO paises (idPais,nombre,continente) VALUES ('CO','Colombia', 'America Sur')"
         mi_cursor.execute(sql)
 
         id = "Col2"
