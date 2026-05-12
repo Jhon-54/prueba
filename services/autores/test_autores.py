@@ -7,6 +7,10 @@ class Test_autores:
     def setup_class(self):
         # Preparación del entorno de las pruebas
         self.url = "http://localhost:5082/autores"
+        sql = """INSERT INTO paises (idPais,nombre,continente) VALUES('VZ','Venezuela','America'),('CO','Colombia','America')"""
+        mi_cursor.execute(sql)
+        mi_db.commit()
+
         id = "01"
         nombre = "pablo"
         email = "pablitogod@gmail.com"
@@ -17,7 +21,7 @@ class Test_autores:
 
     def teardown_class(self):
         #Limpia la base de datos
-        sql = f"DELETE FROM autores WHERE idAutor='01'"
+        sql = "DELETE FROM paises WHERE idPais IN ('VZ','CO')"
         mi_cursor.execute(sql)
         mi_db.commit()
     
