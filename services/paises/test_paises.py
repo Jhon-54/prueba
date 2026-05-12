@@ -52,8 +52,7 @@ class Test_paises:
         id = "PP"
         nombre = "Pais_Cambiado"
         continente = "Africa"
-        nuevo = {"nombre":nombre,"continente":continente
-        }
+        nuevo = {"nombre":nombre,"continente":continente}
         esperado = "País modificado con éxito"
         calculado = requests.put(f"{self.url}/{id}",json=nuevo)
         assert calculado.status_code == 200
@@ -82,7 +81,6 @@ class Test_paises:
     def test_elimina(self,id_entrada,esperado_entrada):
         id = id_entrada
         esperado = esperado_entrada
-        if id == "SP":requests.post(self.url,json={"id":"SP","nombre":"Nuevo_Pais","continente":"America"})
         calculado = requests.delete(f"{self.url}/{id}")
         assert calculado.status_code == 200
         assert esperado in calculado.json()["mensaje"]
