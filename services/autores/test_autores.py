@@ -10,7 +10,7 @@ class Test_autores:
         sql = """INSERT INTO paises (idPais,nombre,continente) VALUES('VZ','Venezuela','America'),('CO','Colombia','America')"""
         mi_cursor.execute(sql)
         mi_db.commit()
-
+        #Estoy muerto
         id = "01"
         nombre = "pablo"
         email = "pablitogod@gmail.com"
