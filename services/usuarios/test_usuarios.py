@@ -1,4 +1,4 @@
-from services.editores.conexion import *
+from conexiones import *
 from usuarios import mis_usuarios
 import pytest
 import requests

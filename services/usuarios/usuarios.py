@@ -3,7 +3,7 @@ Se tendra el modelo para la gestion de usuarios,
 es decir todo aquello que tenga que ver con la persistenncia (SQL).
 """""
 
-from services.editores.conexion import *
+from conexiones import *
 
 class Usuarios:
     def listar(self):
